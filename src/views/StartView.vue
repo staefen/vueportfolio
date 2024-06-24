@@ -4,6 +4,8 @@ import { RouterLink, RouterView } from 'vue-router';
 function email() {
   window.location.href = "mailto:stephenhuynh@live.dk";
 }
+
+var description = 'Welcome to my portfolio! I\'m an Interaction Designer passionate about creating intuitive and engaging digital experiences. Explore my work to see how my enthusiasm for design and technology drives me to bring ideas to life!';
 </script>
 
 <template>
@@ -16,9 +18,9 @@ function email() {
           <RouterLink to="design"><mark class="mark-design">design</mark></RouterLink>, 
           <RouterLink to="frontend-development"><mark class="mark-front">front-end development</mark></RouterLink> &amp; 
           <RouterLink to="user-evaluation"><mark class="mark-evaluation">user evaluations</mark></RouterLink>.</h1>
-        <p>I'm an Interaction Designer based in Aalborg, Denmark with competencies ranging Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex enim totam vel vitae quisquam at commodi nulla magnam. Repudiandae voluptate numquam autem ipsum minus reiciendis maxime quas tempora consequatur vero. Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-        <!-- <button class="label" @onclick="email();"></button> -->
-        <div class="connect-button label" @onclick="email();"></div>
+        <p>{{description}}</p>
+        <button class="label" @onclick="email();"></button>
+        <!-- <div class="connect-button label" @onclick="email();"></div> -->
       </div>
     </section>
     <section>
